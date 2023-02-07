@@ -3,8 +3,12 @@ uuid = "5821695c-2820-464b-a8b2-f88be83063f5"
 authors = ["Javier González Monge"]
 version = "0.1.0"
 
+[deps]
+BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
+
 [compat]
 julia = "1.8"
+BenchmarkTools = "1.2"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"

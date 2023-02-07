@@ -36,7 +36,8 @@ divide(x, y) = divide(promote(x, y)...)
     factorial(n)
 
 Computes the factorial of `n`.
-`` n! = n \\cdot (n - 1) \\cdot (n - 2) \\cdot ... \\cdot 1 ``
+
+`` n! = n \\cdot (n - 1) \\cdot (n - 2) \\cdot ... \\cdot 1. ``
 """
 myfactorial(n::T) where {T<:Integer} = n <= 1 ? 1 : n * factorial(n - 1)
 
@@ -44,7 +45,10 @@ myfactorial(n::T) where {T<:Integer} = n <= 1 ? 1 : n * factorial(n - 1)
     fibonacci(n)
 
 Computes the `n`th Fibonacci number.
-`` F_n = F_{n - 1} + F_{n - 2} ``
+
+    `` F_0 = 0, ``
+    `` F_1 = 1, `` and
+`` F_n = F_{n - 1} + F_{n - 2}. ``
 """
 fibonacci(n::T) where {T<:Integer} = n <= 1 ? n : fibonacci(n - 1) + fibonacci(n - 2)
 

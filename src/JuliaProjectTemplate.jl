@@ -88,7 +88,7 @@ julia> z = factorial(5)
 120
 ```
 """
-myfactorial(n::T) where {T <: Integer} = n <= 1 ? 1 : n * factorial(n - 1)
+myfactorial(n::T) where {T <: Integer} = n <= 1 ? 1 : n * myfactorial(n - 1)
 
 """
     fibonacci(n)

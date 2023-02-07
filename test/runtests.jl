@@ -13,17 +13,17 @@ using Test
 end
 
 @testset "Factorial" begin
-    @test factorial(0) == 1
-    @test factorial(1) == 1
-    @test factorial(2) == 2
-    @test factorial(3) == 6
-    @test factorial(4) == 24
-    @test factorial(5) == 120
-    @test factorial(6) == 720
-    @test factorial(7) == 5040
-    @test factorial(8) == 40320
-    @test factorial(9) == 362880
-    @test factorial(10) == 3628800
+    @test myfactorial(0) == 1
+    @test myfactorial(1) == 1
+    @test myfactorial(2) == 2
+    @test myfactorial(3) == 6
+    @test myfactorial(4) == 24
+    @test myfactorial(5) == 120
+    @test myfactorial(6) == 720
+    @test myfactorial(7) == 5040
+    @test myfactorial(8) == 40320
+    @test myfactorial(9) == 362880
+    @test myfactorial(10) == 3628800
 end
 
 @testset "Fibonacci" begin
